@@ -13,11 +13,14 @@ def test_mixed_list():
     assert output['0'] == 2
     assert 4 not in output.keys()
     assert 0 not in output.keys()
+    
 
 def test_empty_list():
     input = []
     output = frequencies(input)
     assert output == {}
+    
+    
 
 def test_example_1():
     input = ['a', 'a', 'b', 'b', 'b', 'c']
@@ -32,3 +35,8 @@ def test_example_2():
     assert output['100'] == 4
     assert output['Hello'] == 1
     assert 100 not in output.keys()
+
+test_empty_list()
+test_example_1()
+test_example_2()
+test_mixed_list()
